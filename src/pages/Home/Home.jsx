@@ -16,9 +16,9 @@ const Home = () => {
     }
   }
 
-  const searchHandler= async (event)=>{
+  const searchHandler=  (event)=>{
     event.preventDefault();
-    const coins= await allCoin.filter((item)=>{
+    const coins= allCoin.filter((item)=>{
       return item.name.toLowerCase().includes(input.toLowerCase())
     })
     setDisplayCoin(coins);
@@ -54,7 +54,7 @@ const Home = () => {
             <Link to={`/coin/${item.id}`} className="table-layout" key={index}>
               <p>{item.market_cap_rank}</p>
               <div>
-                <img src={item.image} alt=""/>
+                <img src={item.image} alt={item.name}/>
                 <p>{item.name + " - " + item.symbol}</p>
             </div>
             <p>{currency.symbol} {item.current_price.toLocaleString()}</p>
