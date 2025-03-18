@@ -39,6 +39,8 @@ const Navbar = () => {
             <li>Features</li>
             <li>Pricing</li>
             <li>Blog</li>
+            <li>About</li>
+            <li>Contact</li>
         </ul>
         <div className="nav-right">
             <select onChange={currencyHandler}>

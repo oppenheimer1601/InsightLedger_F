@@ -12,16 +12,14 @@
     gap: 30px;
 }
 .hero h1{
-    font-size: max(4vw, 38px);
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .hero p{
-    width: 75%;
-    color: #e3e3e3;
-    line-height: 1.6;
     font-size: 18px;
+    max-width: 600px;
+    margin: auto;
 }
 .hero form{
     padding: 10px;
@@ -60,20 +58,21 @@
     transition: all 0.3s ease;
 }
 .crypto-table{
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
-    background: linear-gradient(135deg, rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
 }
 .table-layout{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
-    padding: 15px 20px;
+    grid-template-columns: 50px 2fr 1fr 1fr 2fr;
     align-items: center;
-    border-bottom: 1px solid #3c3c3c;
-    transition: background 0.3s ease;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.table-layout p {
+    margin: 0;
+    padding: 8px;
 }
 .table-layout:hover {
     background: rgba(255, 255, 255, 0.05);
@@ -97,12 +96,12 @@
     transform: scale(1.1);
 }
 .table-layout .green{
-    color: #00D515;
+    color: #00c853;
     text-align: center;
     font-weight: bold;      
 }
 .table-layout .red{
-    color: #ff4646;
+    color: #ff3d00;
     text-align: center;
     font-weight: bold;      
 }

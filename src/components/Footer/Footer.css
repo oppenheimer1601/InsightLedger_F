@@ -1,20 +1,20 @@
 .footer {
+    background-color: transparent;
+    color: #f0f0f0;
+    padding: 40px 20px;
     text-align: center;
-    margin: auto;
-    max-width: 80%;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px 0;
-    font-size: 14px;
-    color: #ccc;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
 }
-
-@media (max-width: 768px) {
-    .footer {
-        font-size: 12px;
-        max-width: 90%;
-        padding: 15px 0;
-    }
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+.footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
 }
